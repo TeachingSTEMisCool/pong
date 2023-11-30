@@ -28,7 +28,7 @@ public class PongFactory implements EntityFactory {
 		
 		return entityBuilder(data)
 				.type(EntityType.BALL)
-				.view(new Circle(5, 5, 5))
+				.view(new Circle(5, 5, 5, Color.LIGHTGRAY))
 				.bbox(new HitBox(BoundingShape.circle(5)))
 				.with(physics)
 				.with(new CollidableComponent(true))
